@@ -1,0 +1,41 @@
+@font-face {
+    font-family: Inter-Regular;
+    src: url('/fonts/Inter-Regular.ttf');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: Inter-Bold;
+    src: url('/fonts/Inter-Bold.ttf');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: Sansation_Regular;
+    src: url('/fonts/Sansation_Regular.ttf');
+    font-display: swap;
+}
+
+body {
+    font-family: Inter-Regular;
+}
+
+.rdrDateDisplayWrapper {
+    display: none;
+}
+
+.rdrPprevButton {
+    display: none !important;
+}
+
+.rdrNextButton {
+    display: none !important;
+}
+
+.rdrMonthAndYearWrapper {
+    align-items: left !important;
+}
+
+.rdrMonthAndYearPickers {
+    justify-content: start !important;
+}
