@@ -21,12 +21,9 @@ function CheckBoxCard({ title, subTitle, toggleOn, activeTab, func }: Props) {
         </div>
       </div>
       {toggleOn !== activeTab ? (
-        <div
-          className="w-[24px] h-[24px] bg-[grey]"
-          onClick={func}
-        ></div>
+        <svg onClick={func} viewBox="0 0 24 24" width={30} height={25} fill="none" xmlns="http://www.w3.org/2000/svg" transform="rotate(180)"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M9 4C4.58172 4 1 7.58172 1 12C1 16.4183 4.58172 20 9 20H15C19.4183 20 23 16.4183 23 12C23 7.58172 19.4183 4 15 4H9ZM15 16C17.2091 16 19 14.2091 19 12C19 9.79086 17.2091 8 15 8C12.7909 8 11 9.79086 11 12C11 14.2091 12.7909 16 15 16Z" fill="#A39CB5"></path> </g></svg>
       ) : (
-        <div className="w-[24px] h-[24px] bg-[#9D71FD]"></div>
+        <svg viewBox="0 0 24 24" width={30} height={25} fill="none" xmlns="http://www.w3.org/2000/svg" transform="rotate(0)"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M9 4C4.58172 4 1 7.58172 1 12C1 16.4183 4.58172 20 9 20H15C19.4183 20 23 16.4183 23 12C23 7.58172 19.4183 4 15 4H9ZM15 16C17.2091 16 19 14.2091 19 12C19 9.79086 17.2091 8 15 8C12.7909 8 11 9.79086 11 12C11 14.2091 12.7909 16 15 16Z" fill="#9D71FD"></path> </g></svg>
       )}
     </div>
   );
