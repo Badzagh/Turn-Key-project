@@ -1,53 +1,14 @@
 import Badge from "@/components/ui/Badge";
 import CheckBoxCard from "@/components/ui/CheckBoxCard";
 import React, { useState } from "react";
+import { checkBoxes, tabs } from "./CheckBoxAndTabItems";
+import Image from "next/image";
 
 type Props = {};
 
-const checkBoxes = [
-  {
-    title: "Sapling",
-    subTitle: "HR Management",
-    toggleOn: "Medium Business",
-  },
-  {
-    title: "Workday",
-    subTitle: "HR Management",
-    toggleOn: "Medium Business",
-  },
-  {
-    title: "Xero",
-    subTitle: "Employers Base",
-    toggleOn: "Enterprise",
-  },
-  {
-    title: "Rippling",
-    subTitle: "Salary Management",
-    toggleOn: "Enterprise",
-  },
-  {
-    title: "Expensify",
-    subTitle: "HR Management",
-    toggleOn: "Enterprise",
-  },
-  {
-    title: "Zenefits",
-    subTitle: "HR Management",
-    toggleOn: "Small Business",
-  },
-];
 
-const tabs = [
-  {
-    name: "Small Business",
-  },
-  {
-    name: "Medium Business",
-  },
-  {
-    name: "Enterprise",
-  },
-];
+
+
 
 function TurnKeyIntergationSection({}: Props) {
   const [activeTab, setActiveTab] = useState("");
@@ -88,13 +49,14 @@ function TurnKeyIntergationSection({}: Props) {
 
       <div className="w-full hidden flex-row  mt-10 xl:flex">
         <div id="left" className="flex flex-col gap-y-4 w-full max-w-[280px]">
-          {checkBoxes.slice(0, 3).map(({ title, subTitle, toggleOn }) => {
+          {checkBoxes.slice(0, 3).map(({ title, subTitle, toggleOn, imgSrc }) => {
             return (
               <CheckBoxCard
                 title={title}
                 subTitle={subTitle}
                 toggleOn={toggleOn}
                 activeTab={activeTab}
+                imgSrc={imgSrc}
                 func={() => setActiveTab(toggleOn)}
               />
             );
@@ -142,7 +104,8 @@ function TurnKeyIntergationSection({}: Props) {
         </div>
 
         <div className="min-w-[380px] relative flex flex-col items-center gap-y-[1.6878rem] bg-[#F2EFFE] border-[2px] border-[#9D71FD] rounded-3xl px-10 py-12 mt-3">
-          <div className="w-[86px] h-[86px] bg-[grey] absolute -top-8"></div>
+          {/* <div className="w-[86px] h-[86px] bg-[grey] absolute -top-8"></div> */}
+          <Image src={'/images/illustration-woman-female-avatar.jpg'} width={86} height={86} className="absolute -top-8 border rounded-[10px]" alt="female-avatar" />
           <div className="flex flex-col gap-y-1 mt-5">
             <h4 className="font-bold text-lg">Lauren Robson</h4>
             <p className="text-sm text-[#5F517D]">HR Director</p>
@@ -199,13 +162,14 @@ function TurnKeyIntergationSection({}: Props) {
         >
           {checkBoxes
             .slice(3, checkBoxes.length)
-            .map(({ title, subTitle, toggleOn }) => {
+            .map(({ title, subTitle, toggleOn, imgSrc }) => {
               return (
                 <CheckBoxCard
                   title={title}
                   subTitle={subTitle}
                   toggleOn={toggleOn}
                   activeTab={activeTab}
+                  imgSrc={imgSrc}
                   func={() => setActiveTab(toggleOn)}
                 />
               );
@@ -215,7 +179,8 @@ function TurnKeyIntergationSection({}: Props) {
 
       <div className="w-full flex flex-col items-center gap-y-4 mt-10 xl:hidden">
         <div className="min-w-[323px] sm:min-w-[380px] relative flex flex-col items-center gap-y-[1.6878rem] bg-[#F2EFFE] border-[2px] border-[#9D71FD] rounded-3xl px-10 py-12 mt-3">
-          <div className="w-[86px] h-[86px] bg-[grey] absolute -top-8"></div>
+          {/* <div className="w-[86px] h-[86px] bg-[grey] absolute -top-8"></div> */}
+          <Image src={'/images/illustration-woman-female-avatar.jpg'} width={86} height={86} className="absolute -top-8 border rounded-[10px]" alt="female-avatar" />
           <div className="flex flex-col gap-y-1 mt-5">
             <h4 className="font-bold text-lg">Lauren Robson</h4>
             <p className="text-sm text-[#5F517D]">HR Director</p>
@@ -226,13 +191,14 @@ function TurnKeyIntergationSection({}: Props) {
           </p>
         </div>
         <div id="left" className="flex flex-col gap-y-4 w-full min-w-[323px] sm:max-w-max sm:gap-x-4 sm:grid sm:grid-cols-2 md:grid-cols-3">
-          {checkBoxes.map(({ title, subTitle, toggleOn }) => {
+          {checkBoxes.map(({ title, subTitle, toggleOn, imgSrc }) => {
             return (
               <CheckBoxCard
                 title={title}
                 subTitle={subTitle}
                 toggleOn={toggleOn}
                 activeTab={activeTab}
+                imgSrc={imgSrc}
                 func={() => setActiveTab(toggleOn)}
               />
             );
