@@ -15,9 +15,8 @@ const config: Config = {
       },
     },
     fontFamily: {
-      'Inter-Regular': 'Inter-Regular',
-      'Inter-Bold': 'Inter-Bold',
-      'Sansation_Regular': 'Sansation_Regular'
+      'SF-Pro-Regular': 'SF-Pro-Regular',
+      'Circular-Std': 'Circular-Std'
     },
     screens: {
       'xs': '430px',

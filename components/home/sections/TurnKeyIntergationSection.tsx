@@ -6,17 +6,13 @@ import Image from "next/image";
 
 type Props = {};
 
-
-
-
-
 function TurnKeyIntergationSection({}: Props) {
   const [activeTab, setActiveTab] = useState("");
-  console.log(activeTab);
+
   return (
     <div className="flex flex-col gap-y-12 text-black text-center mt-10 items-center p-6 md:p-0">
-      <div className="flex flex-col gap-y-4 max-w-[779px]">
-        <h3 className="font-bold text-4xl md:text-[64px] md:whitespace-nowrap">
+      <div className="flex flex-col gap-y-10 max-w-[779px]">
+        <h3 className="font-bold text-4xl md:text-[64px] md:whitespace-nowrap font-Circular-Std">
           Easy Turn-Key Integration
         </h3>
         <p className="text-lg text-[#5F517D]">
@@ -177,7 +173,7 @@ function TurnKeyIntergationSection({}: Props) {
         </div>
       </div>
 
-      <div className="w-full flex flex-col items-center gap-y-4 mt-10 xl:hidden">
+      <div className="w-full flex flex-col items-center gap-y-6 mt-10 xl:hidden">
         <div className="min-w-[323px] sm:min-w-[380px] relative flex flex-col items-center gap-y-[1.6878rem] bg-[#F2EFFE] border-[2px] border-[#9D71FD] rounded-3xl px-10 py-12 mt-3">
           {/* <div className="w-[86px] h-[86px] bg-[grey] absolute -top-8"></div> */}
           <Image src={'/images/illustration-woman-female-avatar.jpg'} width={86} height={86} className="absolute -top-8 border rounded-[10px]" alt="female-avatar" />

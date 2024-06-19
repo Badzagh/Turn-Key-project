@@ -18,8 +18,7 @@ function CheckBoxCard({
   func,
   imgSrc,
 }: Props) {
-  console.log(toggleOn);
-  console.log(activeTab);
+
   return (
     <div className="flex flex-row justify-between border border-[#E8E6EC] p-4 items-center rounded-xl">
       <div className="flex flex-row gap-x-2">
@@ -35,9 +34,9 @@ function CheckBoxCard({
           <div className="w-[48px] h-[48px] bg-[grey]"></div>
         )}
 
-        <div className="flex flex-col items-start">
+        <div className="flex flex-col items-start justify-center">
           <p className="font-medium">{title}</p>
-          <p className="text-[#5F517D]">{subTitle}</p>
+          <p className="text-[#5F517D] text-xs">{subTitle}</p>
         </div>
       </div>
       {toggleOn !== activeTab ? (

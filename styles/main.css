@@ -1,23 +1,17 @@
 @font-face {
-    font-family: Inter-Regular;
-    src: url('/fonts/Inter-Regular.ttf');
+    font-family: SF-Pro-Regular;
+    src: url('/fonts/SFPRODISPLAYREGULAR.OTF');
     font-display: swap;
 }
 
 @font-face {
-    font-family: Inter-Bold;
-    src: url('/fonts/Inter-Bold.ttf');
-    font-display: swap;
-}
-
-@font-face {
-    font-family: Sansation_Regular;
-    src: url('/fonts/Sansation_Regular.ttf');
+    font-family: Circular-Std;
+    src: url('/fonts/circular-std-medium-500.ttf');
     font-display: swap;
 }
 
 body {
-    font-family: Inter-Regular;
+    font-family: SF-Pro-Regular;
 }
 
 .rdrDateDisplayWrapper {

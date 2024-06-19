@@ -21,7 +21,7 @@ export default function App({ Component, pageProps }: AppProps) {
     />
 
     <Header />
-    <div className="w-full  font-Inter-Regular max-w-[1180px] mx-auto">
+    <div className="w-full max-w-[1180px] mx-auto">
         <main
           className={`w-full`}
         >

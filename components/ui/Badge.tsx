@@ -8,7 +8,7 @@ type Props = {
 
 function Badge({ children, func, active }: Props) {
   return (
-    <div className={`px-[20.5px] py-[9.5px] text-[#543E81] border border-[##1A0745] rounded-xl hover:border-[#9D71FD] active:bg-[#9D71FD] cursor-pointer
+    <div className={`flex items-center px-[20.5px] py-[9.5px] text-[#543E81] border border-[##1A0745] rounded-xl hover:border-[#9D71FD] active:bg-[#9D71FD] cursor-pointer
     ${active ? "bg-[#9D71FD] text-white" : ""}`}
     onClick={func}
     >
